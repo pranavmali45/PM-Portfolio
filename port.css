@@ -1,0 +1,988 @@
+body{
+background:#0a0a0a;
+color:white;
+font-family:Segoe UI,sans-serif;
+}
+
+.section-title{
+color:#00ff99;
+margin-bottom:30px;
+text-align:center;
+}
+
+.profile-img{
+width:350px;
+height:350px;
+border-radius:50%;
+border:5px solid #00ff99;
+object-fit:cover;
+
+box-shadow:
+0 0 20px #00ff99,
+0 0 40px #00ff99;
+}
+
+.skill-card,
+.project-card,
+.timeline-card{
+background:#111;
+padding:25px;
+border-radius:15px;
+transition:.4s;
+margin-bottom:20px;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.timeline-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00ff99;
+}
+
+.skill-card i{
+font-size:50px;
+color:#00ff99;
+}
+
+.footer{
+background:#000;
+text-align:center;
+padding:40px;
+}
+
+.social-icons i{
+font-size:24px;
+margin:10px;
+color:white;
+}
+
+.social-icons i:hover{
+color:#00ff99;
+}
+.custom-navbar{
+    background:#000;
+    padding:15px 0;
+    box-shadow:0 0 15px rgba(0,255,153,.2);
+}
+
+.navbar-brand{
+    font-size:28px;
+    color:white !important;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#00ff99 !important;
+}
+
+.nav-link.active{
+    color:#00ff99 !important;
+}
+
+.navbar-toggler{
+    border:1px solid #00ff99;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    padding-top:80px;
+}
+#backTop{
+
+    display:none;
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#00ff99;
+
+    color:#000;
+
+    font-size:25px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    z-index:999;
+
+
+    box-shadow:
+    0 0 15px #00ff99,
+    0 0 30px #00ff99;
+
+
+    transition:.3s;
+
+}
+
+
+
+#backTop:hover{
+
+    background:#000;
+
+    color:#00ff99;
+
+    border:2px solid #00ff99;
+
+
+    transform:translateY(-5px);
+
+}
+.achievement-card {
+    background: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #198754;
+    transition: 0.3s ease;
+}
+
+.achievement-card h4 {
+    color: #198754;
+}
+
+.achievement-card p {
+    color: #555;
+}
+
+/* Hover Effect */
+.achievement-card:hover {
+    background-color: #198754;
+    color: white;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.achievement-card:hover h4 {
+    color: white;
+}
+
+.achievement-card:hover p {
+    color: white;
+}
+/* Smooth Scroll */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Section Animation */
+
+
+/* Hero Text Animation */
+.hero-section h1 {
+    animation: slideLeft 1s ease forwards;
+}
+
+.hero-section h3 {
+    animation: slideRight 1.2s ease forwards;
+}
+
+.hero-section p {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* H1 slides from left */
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* H3 slides from right */
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.hero-section {
+    padding-top: 100px;
+}
+
+/* Paragraph fades in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Floating Profile Image */
+.profile-img{
+    max-width:350px;
+    border-radius:50%;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+/* Skill Cards */
+.skill-card{
+    transition:0.4s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(25,135,84,.3);
+}
+
+/* Project Cards */
+.project-card{
+    transition:0.4s;
+}
+
+.project-card:hover{
+    transform:scale(1.05);
+}
+
+/* Achievement Cards */
+.achievement-card{
+    transition:0.4s;
+}
+
+.achievement-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+/* Resume Button */
+#resume .btn{
+    transition:0.4s;
+}
+
+#resume .btn:hover{
+    transform:scale(1.08);
+}
+
+/* Navbar Animation */
+.custom-navbar{
+    animation:navDown 0.8s ease;
+}
+
+@keyframes navDown{
+    from{
+        transform:translateY(-100%);
+    }
+    to{
+        transform:translateY(0);
+    }
+}
+
+/* Responsive WhatsApp Floating Button */
+
+.whatsapp-float{
+
+    position:fixed;
+
+    bottom:25px;
+
+    left:25px;
+
+    width:60px;
+
+    height:60px;
+
+    background:#25D366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:32px;
+
+    text-decoration:none;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+    z-index:999;
+
+    transition:0.3s;
+
+}
+
+
+.whatsapp-float:hover{
+
+    transform:scale(1.1);
+
+    background:#128C7E;
+
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .whatsapp-float{
+
+        width:50px;
+
+        height:50px;
+
+        left:15px;
+
+        bottom:20px;
+
+        font-size:26px;
+
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+    .whatsapp-float{
+
+        width:45px;
+
+        height:45px;
+
+        left:12px;
+
+        bottom:15px;
+
+        font-size:23px;
+
+    }
+
+}
+
+/*about animation*/
+.about-section{
+    overflow:hidden;
+}
+
+
+/* Title Animation */
+.section-title{
+    transition:0.4s ease;
+    display:inline-block;
+}
+
+
+.section-title:hover{
+    transform:scale(1.08);
+    background:#198754;
+    color:white;
+}
+
+
+/* About Text */
+.about-text{
+
+    
+    color:white;
+    line-height:1.8;
+    font-size:18px;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    transition:all 0.5s ease;
+
+    animation: slideUp 1s ease;
+
+}
+
+
+
+/* Hover Effect */
+.about-text:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 15px 30px rgba(0,255,120,0.25);
+
+}
+
+
+/* Load Animation */
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+/* skill animation*/
+
+/* Skills Section */
+
+#skills{
+    overflow:hidden;
+}
+
+
+/* Section Title */
+
+.section-title{
+
+    transition:0.4s ease;
+    display:inline-block;
+
+}
+
+
+.section-title:hover{
+
+    transform:scale(1.08);
+    background:#198754;
+    color:white;
+
+}
+
+
+/* Skill Card */
+
+.skill-card{
+
+    background:#000;
+    color:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    height:100%;
+
+    transition:all 0.5s ease;
+
+    border:1px solid #198754;
+
+    animation:skillAnimation 0.8s ease forwards;
+
+    opacity:0;
+
+}
+
+
+
+/* Different delay for cards */
+
+.col-md-4:nth-child(1) .skill-card{
+    animation-delay:.1s;
+}
+
+.col-md-4:nth-child(2) .skill-card{
+    animation-delay:.2s;
+}
+
+.col-md-4:nth-child(3) .skill-card{
+    animation-delay:.3s;
+}
+
+.col-md-4:nth-child(4) .skill-card{
+    animation-delay:.4s;
+}
+
+.col-md-4:nth-child(5) .skill-card{
+    animation-delay:.5s;
+}
+
+.col-md-4:nth-child(6) .skill-card{
+    animation-delay:.6s;
+}
+
+
+
+/* Icon */
+
+.skill-card i{
+
+    font-size:55px;
+
+    color:#198754;
+
+    margin-bottom:15px;
+
+    transition:.4s;
+
+}
+
+
+
+/* Heading */
+
+.skill-card h4{
+
+    font-weight:bold;
+
+    margin-bottom:10px;
+
+}
+
+
+
+/* Hover Effect */
+
+.skill-card:hover{
+
+    transform:translateY(-15px) scale(1.03);
+
+    box-shadow:
+
+    0 15px 35px rgba(25,135,84,0.5);
+
+}
+
+
+
+/* Icon Hover */
+
+.skill-card:hover i{
+
+    transform:rotateY(360deg);
+
+    color:white;
+
+}
+
+
+
+/* Animation */
+
+@keyframes skillAnimation{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+/* google */
+.translate-box{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-left:15px;
+}
+
+.translate-box i{
+    color:#198754;
+    font-size:22px;
+}
+
+
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar offset */
+:root {
+    --navbar-height: 70px;
+}
+section{
+    scroll-margin-top: 70px;
+}
+section {
+    scroll-margin-top: var(--navbar-height);
+    padding: 20px 0;
+}
+
+/* Remove extra body space */
+.logo-circle{
+    width: 65px;
+    height: 65px;
+    border-radius: 60%;
+     background: linear-gradient(135deg,#198754,#20c997);
+    border: 3px solid white;
+    color:#f1fff5;
+    font-size: 22px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.25);
+}
+.education-section{
+    background: transparent;
+}
+
+
+
+.section-title{
+    color:#198754;
+    font-weight:700;
+    background:white;
+}
+
+
+
+/* Timeline */
+
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+}
+
+
+
+.timeline:before{
+
+    content:"";
+    position:absolute;
+    width:5px;
+    background:#198754;
+    top:0;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:10px;
+
+}
+
+
+
+.timeline-item{
+
+    position:relative;
+    display:flex;
+    justify-content:center;
+    margin-bottom:50px;
+
+}
+
+
+
+.timeline-icon{
+
+    position:absolute;
+
+    left:50%;
+    transform:translateX(-50%);
+
+    width:65px;
+    height:65px;
+
+    background:#198754;
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:28px;
+
+    box-shadow:0 0 20px rgba(25,135,84,.5);
+
+    z-index:2;
+
+}
+
+
+
+
+.education-card{
+
+    width:70%;
+
+    margin-top:80px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    transition:0.4s ease;
+
+    border-left:6px solid #198754;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/* Center hover animation */
+
+.education-card:hover{
+
+    transform:translateY(-15px) scale(1.03);
+
+    box-shadow:
+    0 0 20px rgba(25,135,84,.4),
+    0 25px 50px rgba(0,0,0,.15);
+
+}
+
+
+/* Glow effect center */
+
+.education-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+
+    height:150px;
+
+    background:rgba(25,135,84,.15);
+
+    border-radius:50%;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%) scale(0);
+
+    transition:.5s;
+
+}
+
+
+
+.education-card:hover::before{
+
+    transform:translate(-50%,-50%) scale(3);
+
+}
+
+
+.achievement-box{
+
+    background:#f1fff5;
+
+    padding:20px;
+
+    border-radius:15px;
+
+}
+
+
+
+.marks{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+
+
+.marks span{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    display:flex;
+
+    justify-content:flex-start; /* remove space */
+
+    gap:5px; /* small gap only */
+
+    align-items:center;
+
+    color:#333;
+
+}s
+
+
+
+.marks b{
+
+    color:#198754;
+
+}
+
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+
+.timeline:before{
+
+left:20px;
+
+}
+
+
+
+.timeline-icon{
+
+left:20px;
+
+}
+
+
+
+.education-card{
+
+width:85%;
+
+margin-left:60px;
+
+}
+
+
+
+.marks{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
+/* bd-effect*/
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-2;
+}
+.achievement-img{
+
+height:220px;
+
+width:100%;
+
+object-fit:cover;
+
+border-radius:15px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+
+.achievement-img:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 20px #198754;
+
+}
+
+
+
+.achievement-card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(10px);
+
+padding:20px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.4s;
+
+}
+
+
+.achievement-card:hover{
+
+transform:translateY(-10px);
+
+}

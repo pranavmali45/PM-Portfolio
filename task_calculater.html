@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <style>
+        table{ border-color: black;
+            border: 5px solid;
+            margin: 0%;
+            background-color: gray;
+            width:fit-content ;
+            margin-top: 0%;
+        }
+        button{
+            width: 100%;
+            border-radius:8% ;
+            cursor: pointer;
+            
+        }
+       input {
+            width: fit-content;
+            height: 50px;
+            font-size: 22px;
+            text-align: right;
+            padding-right: 5px;
+           
+        }
+        
+        .arith{
+            background-color: rgb(69, 126, 175);
+        }
+        #equal{
+            background-color:firebrick;
+        }
+      
+    </style>
+</head>
+<body>
+    <center>
+    <div>
+    
+        
+     <table border="3px"  >
+        <tr>
+           
+                <th colspan="4" >
+                 <input type="text" id="display" readonly>
+                </th>
+        
+            
+        </tr>
+        <tr>
+            <td><button>1</button></td>
+            <td><button>2</button></td>
+            <td><button>3</button></td>
+            <td><button class="arith">+</button></td>
+        </tr>
+       <tr>
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td><button class="arith">-</button></td>
+        </tr>
+        <tr>
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+            <td><button>9</button></td>
+            <td><button class="arith">*</button></td>
+        </tr>
+         <tr>
+            <td><button>.</button></td>
+             <td ><button>0</button></td>
+            <td><button id="equal">C</button></td>
+            <td><button class="arith">/</button></td>
+        </tr>
+        <tr >
+             <td colspan="4" ><center><button id="equal">=</button></center></td>
+        </tr>
+     </table>
+    </div>
+    </center>
+    <script>
+        const disply= document.getElementById("display");
+         const buttons= document.querySelectorAll("button");
+        
+         buttons.forEach((button) => {
+            button.addEventListener("click",() => {
+                const value = button.textContent;
+                if (value === "C") {
+                    disply.value= "";
+                }
+                else if (value === "=") {
+                    try {
+                        disply.value= eval(disply.value);
+
+                    }catch{
+                        disply.value= "Error";
+                    }
+                }
+                else{
+                    disply.value += value ;
+                }
+            });
+         });
+    </script>
+</body>
+</html>

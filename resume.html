@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Pranav Mali Resume</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+
+body{
+    background:#f2f2f2;
+    transition:0.4s;
+}
+
+.resume{
+    max-width:1000px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.profile-img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #198754;
+}
+
+.section-title{
+    color:#198754;
+    border-bottom:3px solid #198754;
+    padding-bottom:5px;
+    margin-top:30px;
+}
+
+.card{
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.skill{
+    margin-bottom:15px;
+}
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .resume{
+    background:#1e1e1e;
+    color:white;
+}
+
+#topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    display:none;
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:1s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="resume">
+
+<div class="text-center">
+
+<img src="imagecss/about.avif" class="profile-img">
+
+<h1 class="mt-3 text-success">Pranav Mali</h1>
+
+<h4>Diploma Computer Engineering</h4>
+
+<p>
+<i class="bi bi-envelope-fill"></i>
+pranavmali@email.com
+
+<br>
+
+<i class="bi bi-telephone-fill"></i>
++91 12452 XXXXX
+</p>
+
+<button class="btn btn-success me-2"
+onclick="downloadResume()">
+<i class="bi bi-download"></i>
+Download Resume
+</button>
+
+<button class="btn btn-dark"
+onclick="toggleMode()">
+🌙 Dark Mode
+</button>
+
+</div>
+
+<!-- Objective -->
+<h2 class="section-title fade">Career Objective</h2>
+
+<p class="fade">
+A passionate Diploma Computer Engineering student
+seeking opportunities to apply technical skills and
+develop innovative software solutions.
+</p>
+
+<!-- Education -->
+<h2 class="section-title fade">Education</h2>
+
+<div class="card p-3 fade">
+<h5>Diploma in Computer Engineering</h5>
+<p>
+Knowledge of Programming, Web Development,
+Database Management and Software Concepts.
+</p>
+</div>
+
+<!-- Skills -->
+<h2 class="section-title fade">Technical Skills</h2>
+
+<div class="skill fade">
+HTML
+<div class="progress">
+<div class="progress-bar bg-success" style="width:90%">
+90%
+</div>
+</div>
+</div>
+
+<div class="skill fade">
+CSS
+<div class="progress">
+<div class="progress-bar bg-info" style="width:85%">
+85%
+</div>
+</div>
+</div>
+
+<div class="skill fade">
+JavaScript
+<div class="progress">
+<div class="progress-bar bg-warning" style="width:80%">
+80%
+</div>
+</div>
+</div>
+
+<div class="skill fade">
+Java
+<div class="progress">
+<div class="progress-bar bg-danger" style="width:75%">
+75%
+</div>
+</div>
+</div>
+
+<!-- Projects -->
+<h2 class="section-title fade">Projects</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-3">
+<div class="card p-3 fade">
+<h5>Portfolio Website</h5>
+<p>Responsive portfolio using HTML, CSS & Bootstrap.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-3">
+<div class="card p-3 fade">
+<h5>Calculator</h5>
+<p>Calculator using HTML, CSS & JavaScript.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-3">
+<div class="card p-3 fade">
+<h5>Registration Form</h5>
+<p>Responsive student registration system.</p>
+</div>
+</div>
+
+</div>
+
+<!-- Achievements -->
+<h2 class="section-title fade">Achievements</h2>
+
+<ul class="fade">
+<li>Playing Cricket in State Level</li>
+<li>Completed Diploma in Computer Engineering</li>
+<li>Created Academic Web Projects</li>
+<li>Improved Coding Skills</li>
+<li>Learned Modern Web Technologies</li>
+</ul>
+
+<!-- Strengths -->
+<h2 class="section-title fade">Strengths</h2>
+
+<div class="row text-center">
+
+<div class="col-md-3">
+<div class="card p-3 fade">
+Quick Learner
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card p-3 fade">
+Team Work
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card p-3 fade">
+Problem Solving
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card p-3 fade">
+Creative Thinking
+</div>
+</div>
+
+</div>
+
+<!-- Hobbies -->
+<h2 class="section-title fade">Hobbies</h2>
+
+<ul class="fade">
+<li>Play Cricket</li>
+<li>Coding</li>
+<li>Learning New Technologies</li>
+<li>Reading Technical Articles</li>
+</ul>
+
+</div>
+
+</div>
+
+<!-- Back To Top -->
+<button id="topBtn"
+class="btn btn-success"
+onclick="topFunction()">
+↑
+</button>
+
+<script>
+
+// Download Resume
+function downloadResume() {
+    window.print();
+}
+
+// Dark Mode
+function toggleMode() {
+    document.body.classList.toggle("dark-mode");
+}
+
+// Scroll Button
+window.onscroll = function () {
+
+let btn = document.getElementById("topBtn");
+
+if(document.documentElement.scrollTop > 200){
+    btn.style.display = "block";
+}
+else{
+    btn.style.display = "none";
+}
+
+};
+
+// Top Function
+function topFunction(){
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    });
+}
+
+// Scroll Animation
+const fades = document.querySelectorAll(".fade");
+
+window.addEventListener("scroll", ()=>{
+
+fades.forEach(item=>{
+
+const top = item.getBoundingClientRect().top;
+
+if(top < window.innerHeight - 100){
+    item.classList.add("show");
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
